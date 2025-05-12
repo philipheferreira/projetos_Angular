@@ -1,0 +1,32 @@
+criar um projeto no angular:
+
+* ng new nome-do-projeto
+
+Verificar versão do Angular: 
+
+* ng version
+
+ou
+
+* ng v 
+
+
+Rodar o projeto no Angular: 
+
+* cd nome-do-projeto
+
+* ng serve
+
+Criar componente no projeto:
+
+ng g component components/new-component
+
+Cria uma pasta components com uma parta new component dentro com todas as definições de component dentro
+
+Caso os terminais ainda não estejam instalados é só usar o comando: 
+
+* npm install
+
+Abrir o navegador no localhost padrão criado: 
+
+* http://localhost:4200
