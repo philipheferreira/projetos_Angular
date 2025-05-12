@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "1-component-geral": {
+    "2-modelo-component-ts-centro": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/1-component-geral",
+            "outputPath": "dist/2-modelo-component-ts-centro",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "1-component-geral:build:production"
+              "buildTarget": "2-modelo-component-ts-centro:build:production"
             },
             "development": {
-              "buildTarget": "1-component-geral:build:development"
+              "buildTarget": "2-modelo-component-ts-centro:build:development"
             }
           },
           "defaultConfiguration": "development"
