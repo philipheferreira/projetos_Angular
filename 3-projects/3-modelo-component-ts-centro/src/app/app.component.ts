@@ -4,9 +4,12 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `
+    <h1>{{title}}</h1>
+    <p>Usando um template criado dentro do component.ts</p>
+  `, // tag que cria localmente um espaço html para ser editado
+  styles:`` // cria localmente um espaço localmente para editar css
 })
-export class AppComponent {
-  title = '2-modelo-component-ts-centro';
+export class AppComponent { // criando variaveis
+  title = '3-modelo-component-ts-centro';
 }
