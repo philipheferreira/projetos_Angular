@@ -5,7 +5,7 @@ import { ComponentDois } from './components/component-dois/component-dois.compon
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ComponentUm, ComponentDois],
+  imports: [RouterOutlet, ComponentUm, ComponentDois], // local que é definido a chamda de biblioteca e componentes
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
