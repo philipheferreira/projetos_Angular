@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './component-um.component.html',
   styleUrl: './component-um.component.css'
 })
-export class ComponentUm {} // Edição de nome para ser feita a chamada igual como ele está definido no componente principal
+export class ComponentUm {
+  public variavel = 'Sou uma variavel criada no componente um'
+} // Edição de nome para ser feita a chamada igual como ele está definido no componente principal
