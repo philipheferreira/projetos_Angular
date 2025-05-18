@@ -1,1 +1,4 @@
-<p>new-component works!</p>
+
+<button [disabled]="estadoDesabilitado" (click)="alerta()">Botão</button> <!-- O fato de disabled estar entre [] significa que ele esta bindado com a variavel estadoDesabilitado -->
+<button (click)="mudarEstadoDesabilitado(estadoDesabilitado)">Mudar estado bloqueio</button>
+
