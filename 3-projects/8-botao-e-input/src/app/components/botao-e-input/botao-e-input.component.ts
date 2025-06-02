@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms'; // adicionado FormsModule
 
 @Component({
   selector: 'app-botao-e-input',
-  imports: [],
+  imports: [FormsModule], // importado forms module
   templateUrl: './botao-e-input.component.html',
   styleUrl: './botao-e-input.component.css'
 })
 export class BotaoEInputComponent {
-  texto: string = ''; // Tipando o texto retornando que ele é um tipo string e só pode receber string
+  textoDigitado: string = '';
 
   mostrarAlerta() {
-    alert(this.texto || 'Campo Vazio!!');
+    alert(`Você digitou: ${this.textoDigitado}`);
   }
 }
