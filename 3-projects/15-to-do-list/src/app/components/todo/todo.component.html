@@ -1,1 +1,14 @@
-<p>Ola, sou o to do component</p>
+<div class="todo-container">
+  <h1>Lista de Tarefas</h1>
+  <input [(ngModel)]="novaTarefa" placeholder="Nova tarefa..." />
+  <button (click)="adicionarTarefa()">Adicionar</button>
+
+  <ul>
+    <li *ngFor="let tarefa of tarefas; let i = index">
+      <span [class.feito]="tarefa.feito" (click)="tarefaFinalizada(tarefa)">
+        {{ tarefa.titulo }}
+      </span>
+      <button (click)="removerTarefa(i)">Remover</button>
+    </li>
+  </ul>
+</div>
