@@ -1,0 +1,3 @@
+Criar componente no projeto:
+
+ng g component components/botao-e-input
