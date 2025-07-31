@@ -7,20 +7,25 @@ O objetivo do projeto é criar a seguinte estrutura:
 
 src/
 ├── app/
-│   ├── about/
-│   │   ├── about.component.ts
-│   │   └── about.component.html
-│   ├── home/
-│   │   ├── home.component.ts
-│   │   └── home.component.html
+│   ├── component/
+│   │   ├── about/
+│   │   │    ├── about.component.ts
+│   │   │    └── about.component.html
+│   │   └── home/
+│   │        ├── home.component.ts
+│   │        └── home.component.html
 │   ├── app-routing.module.ts  # Módulo de roteamento
 │   ├── app.component.ts
 │   ├── app.component.html
 │   └── app.module.ts
 
-2 - Caso tenha instalado o CLI o module de roteamento já está incluso, caso não esteja é só usar o comando a baixo:
+2 - INSTALAR MODULO DE ROTEAMENTO:
+  Caso tenha instalado o CLI o module de roteamento já está incluso, caso não esteja é só usar o comando a baixo:
 
 *  ng add @angular/router
 
+3 - CRIAR COMPONENTS PARA AS ROTAS:
+  Crias os seguintes componentes para serem utilizados:
 
-
+*  ng generate component home
+*  ng generate component component/about
