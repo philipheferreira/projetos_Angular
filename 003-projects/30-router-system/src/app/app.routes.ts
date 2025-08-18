@@ -7,5 +7,4 @@ export const routes: Routes = [
   { path: 'home', component: AppComponent },
   { path: 'primeiro', component: PrimeiroComponente },
   { path: 'segundo', component: SegundoComponente },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
