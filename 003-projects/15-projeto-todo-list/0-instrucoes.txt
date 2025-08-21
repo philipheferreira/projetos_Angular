@@ -1,3 +1,5 @@
+site usado de exemplo: https://satellasoft.com/artigo/angular/criando-uma-to-do-list-em-angular-240414577
+
 Comando para rodar criação do projeto: 
 
 * ng new projeto-todo-list
