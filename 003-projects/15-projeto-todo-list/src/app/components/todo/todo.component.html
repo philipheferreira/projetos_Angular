@@ -10,16 +10,24 @@
 
     <h3>Não Finalizadas</h3>
     <ul class="list">
-
+      <li *ngFor="let item of getItens(false)">
+        <label>
+          <input />
+          {{item.nome}}
+        </label>
+      </li>
     </ul>
-
   </div>
 
 
   <div>
     <h3>Finalizadas</h3>
     <ul class="list">
-
+      <li>
+        <label>
+          <input />
+        </label>
+      </li>
     </ul>
   </div>
 </div>
