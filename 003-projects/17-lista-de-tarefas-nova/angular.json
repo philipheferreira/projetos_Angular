@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "todo-app": {
+    "lista-de-tarefas-nova": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/todo-app",
+            "outputPath": "dist/lista-de-tarefas-nova",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "todo-app:build:production"
+              "buildTarget": "lista-de-tarefas-nova:build:production"
             },
             "development": {
-              "buildTarget": "todo-app:build:development"
+              "buildTarget": "lista-de-tarefas-nova:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,8 +92,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }

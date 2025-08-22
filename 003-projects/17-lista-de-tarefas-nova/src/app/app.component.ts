@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ListaDeTarefas } from './componets/lista-de-tarefas/lista-de-tarefas.component'
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ListaDeTarefas],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'todo-app';
+  title = 'lista-de-tarefas-nova';
 }

@@ -5,9 +5,9 @@
     <button></button>
 
     <ul>
-        <li *ngFor="let tarefa of tarefas; trackBy:tarefa">
-           <input type="checkbox" [(ngModel)]="Tarefa.concluido" (change)="toggleConcluido(i)" />
-            {{Tarefa.titulo}}
+        <li *ngFor="let tarefa of tarefas; let i = index">
+           <input type="checkbox" [(ngModel)]="tarefa.concluido" />
+           <span [class.concluida]="tarefa.concluido"> {{tarefa.titulo}} </span>
             <button (click)="removerTarefa(i)" >❌</button>
         </li>
     </ul>

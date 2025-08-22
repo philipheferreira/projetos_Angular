@@ -2,21 +2,17 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // chamando a biblioteca forms dentro do angular
 import { BrowserModule } from '@angular/platform-browser';
 
-Component({
+@Component({
   selector: 'app-lista-de-tarefas',
+  standalone: true,
   imports: [FormsModule, BrowserModule],
   templateUrl: './lista-de-tarefas.component.html',
   styleUrl: './lista-de-tarefas.component.css'
 })
 
-interface Tarefa {
-  titulo: string;
-  concluido: boolean
-}
-
-export class listaDeTarefas {
+export class ListaDeTarefas { // 🔥 nome da classe sempre PascalCase
   novaTarefa: string = '';
-  tarefas: Tarefa[] = [];
+  tarefas: { titulo: string; concluido: boolean }[] = [];
 
   adicionarTarefa(){
     if (this.novaTarefa.trim() !== '') {
