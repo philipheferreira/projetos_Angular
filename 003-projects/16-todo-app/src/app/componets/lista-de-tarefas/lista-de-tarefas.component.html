@@ -1,1 +1,14 @@
-<p>Lista de tarefas sendo chamada</p>
+<div>
+    <h2></h2>
+
+    <input [(ngModel)]="novaTarefa" placeholder="Digitar uma tarefa..."/>
+    <button></button>
+
+    <ul>
+        <li *ngFor="let tarefa of tarefas; trackBy:tarefa">
+           <input type="checkbox" [(ngModel)]="Tarefa.concluido" (change)="toggleConcluido(i)" />
+            {{Tarefa.titulo}}
+            <button (click)="removerTarefa(i)" >❌</button>
+        </li>
+    </ul>
+</div>
