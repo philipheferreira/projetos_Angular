@@ -1,7 +1,0 @@
-comando para criar projeto:
-
-* ng new todo-app
-
-comando para gerar componente:
-
-* ng generate component componets/lista-de-tarefas
