@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms'; // chamando a biblioteca forms dentro do angular
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-todo',
-  imports: [],
+  imports: [FormsModule], // importando o formsModule para usar as operacoes como o ngModel
   templateUrl: './todo.component.html',
   styleUrl: './todo.component.css'
 })

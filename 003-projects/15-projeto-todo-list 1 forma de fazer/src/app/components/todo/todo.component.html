@@ -1,0 +1,38 @@
+<div class="container">
+  <h1>Lista de Tarefas</h1>
+  <div class="form-inline">
+    <input type="text" class="form-control" placeholder="Insira a tarefa aqui" [(ngModel)]="receberTarefa">
+    <button class="btn btn-primary" (click)="adicionarItem()">Adicionar</button>
+  </div>
+  <hr/>
+
+  <div>
+
+    <h3>Não Finalizadas</h3>
+    <ul class="list">
+      @for (item of getItens(false); track item) {
+      <li>
+        <label for="checkbox-{{item.id}}" class="form-check-label">
+          <input id="checkbox-{{item.id}}" class="form-check-input" type="checkbox" value="{{item.concluido}}" [checked]="item.concluido" (click)="setFinalizadas(item.id)"/>
+          {{item.nome}}
+        </label>
+      </li>
+      }
+    </ul>
+  </div>
+
+
+  <div>
+    <h3>Finalizadas</h3>
+    <ul class="list">
+      @for (item of getItens(true); track item) {
+      <li>
+        <label for="checkbox-{{item.id}}" class="form-check-label">
+          <input id="checkbox-{{item.id}}" class="form-check-input" type="checkbox" value="{{item.concluido}}" [checked]="item.concluido" (click)="setFinalizadas(item.id)"/>
+          {{item.nome}}
+        </label>
+      </li>
+      }
+    </ul>
+  </div>
+</div>
