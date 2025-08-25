@@ -1,1 +1,10 @@
-<p>tarefas works!</p>
+<div>
+  <input [(ngModel)]="novaTarefa" placeholder="Adicionar nova Tarefa" />
+  <button (click)="adicionarTarefa()">Adicionar</button>
+</div>
+<ul>
+  <li *ngFor="let tarefa of tarefas; let i = index">
+    {{ tarefa }}
+    <button (click)="removerTarefa(i)">Remover</button>
+  </li>
+</ul>
