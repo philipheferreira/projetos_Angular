@@ -6,6 +6,9 @@ Comando para criar componente:
 
 * ng g component components/tarefas
 
+Comando para criar usuários na lista:
+
+* ng g component components/usuarios
 
 Sobre os comandos a cima: 
 
