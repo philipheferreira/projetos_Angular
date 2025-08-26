@@ -1,1 +1,12 @@
-<p>Componente de tarefas</p>
+<div class="container">
+  <h2>Minhas Tarefas</h2>
+
+<ul>
+  <li *ngFor="let tarefa of tarefas">
+    {{ tarefa.titulo }}
+    <span [style.color]="tarefa.concluida ? 'green' : 'red'">
+      ({{ tarefa.concluida ? 'Concluída' : 'Pendente' }})
+    </span>
+  </li>
+</ul>
+</div>
