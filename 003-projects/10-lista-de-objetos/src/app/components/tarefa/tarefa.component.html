@@ -6,7 +6,10 @@
     {{ tarefa.titulo }}
     <span [style.color]="tarefa.concluida ? 'green' : 'red'">
       ({{ tarefa.concluida ? 'Concluída' : 'Pendente' }})
+      <button (click)="removerTarefa(tarefa.id)">❌</button>
     </span>
   </li>
 </ul>
+
+<button (click)="adicionarTarefa()">Adicionar Tarefa</button>
 </div>
