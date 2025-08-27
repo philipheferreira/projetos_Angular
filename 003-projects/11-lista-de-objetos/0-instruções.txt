@@ -1,0 +1,15 @@
+criar um projeto no angular:
+
+* ng new nome-do-projeto
+
+Verificar versão do Angular: 
+
+* ng version
+
+ou
+
+* ng v 
+
+Criar componente no projeto:
+
+ng g component components/tarefa
