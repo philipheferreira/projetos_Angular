@@ -8,11 +8,11 @@ Instalar Angular Material (se ainda não tiver)
 
 Criar primeiro componente Modal:
 
-* ng generate component component/modal1
+* ng generate component component/modals/modal1
 
 Criar segundo componente Modal:
 
-* ng generate component component/modal2
+* ng generate component component/modals/modal2
 
 Sobre os comandos a cima: 
 
