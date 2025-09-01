@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './menu.component.css'
 })
 export class MenuComponent {
-
+  menuItems = [
+    { path: '/home', label: 'Home' },
+    { path: '/sobre', label: 'Sobre' },
+    { path: '/contato', label: 'Contato' }
+  ];
 }

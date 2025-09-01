@@ -5,6 +5,9 @@ Comando para rodar criação do projeto:
 Comando para criar componentes:
 
 * ng g component components/menu
+* ng g component components/home
+* ng g component components/sobre
+* ng g component components/contato
 
 
 Sobre os comandos a cima: 
