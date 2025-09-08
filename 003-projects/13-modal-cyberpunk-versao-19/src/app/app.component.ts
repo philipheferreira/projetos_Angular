@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
+import { MatDialog } from '@angular/material/dialog';
+import { ModalCyberpunkComponent } from './component/modals/modal-cyberpunk/modal-cyberpunk.component';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
@@ -8,5 +9,16 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'modal-cyberpunk-versao-19';
+
+  constructor(private dialog: MatDialog) {}
+
+  abrirModal(): void {
+
+    this.dialog.open(ModalCyberpunkComponent, {
+      height: '500px',
+        width: '600px',
+        data: { nome: 'Philiphe' } // passando dados para o modal
+      });
+
+  }
 }
