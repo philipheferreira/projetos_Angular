@@ -1,6 +1,6 @@
 Comando para rodar criação do projeto: 
 
-* ng new exemplo-modal
+* ng new modal-exemplo-versao-19
 
 Instalar Angular Material (se ainda não tiver)
 

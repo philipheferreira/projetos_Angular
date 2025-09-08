@@ -16,3 +16,4 @@ ng - Todo comando Angular inicia-se com esse prefixo;
 g - Seria abreviação para generate;
 components/ - vai identificar essa pasta, caso não exista será criada;
 todo - Nome do component
+
