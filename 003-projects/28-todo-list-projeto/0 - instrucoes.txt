@@ -18,3 +18,15 @@ todo - Nome do component
 Instalar o boodstrap para fazer as operações: 
 
 * npm install bootstrap@5.3.8
+
+ir no arquivo angular.json e escrever as funcionalidades a baixo para adiciona-las. Ele está fora do src: 
+
+"styles": [
+  "node_modules/bootstrap/dist/css/bootstrap.min.css",
+  "src/styles.css"
+],
+"scripts": [
+  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+]
+
+Pronto! O boodstrap estará instalado

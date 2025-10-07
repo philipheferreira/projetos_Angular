@@ -1,1 +1,36 @@
-<img width="250" height="300" src="https://upload.wikimedia.org/wikipedia/pt/b/ba/RoboCop_2014.jpg" alt="Robocop">
+
+<div class="container">
+
+  <h1>To-Do Aplication</h1>
+
+  <hr/>
+  <form (ngSubmit)="onSubimit(taskForm)" #taskForm="ngForm">
+    <div class="form-group">
+      <label for="task">Tarefa</label>
+      <input type="text" class="form-control" id="task" placeholder="Enter task" ngMode name="task"/>
+      <div id="errorMessage" class="form-text text-danger">Required field</div>
+    </div>
+
+    <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <hr/>
+
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Task</th>
+      <th scope="col">Completed</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mark</td>
+      <td> <input id="myCheckbox" type="checkbox" /> </td>
+      <td> <button class="btn btn-danger btn-sm">Delete</button> </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
