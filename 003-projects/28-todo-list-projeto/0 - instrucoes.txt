@@ -15,3 +15,6 @@ g - Seria abreviação para generate;
 components/ - vai identificar essa pasta, caso não exista será criada;
 todo - Nome do component
 
+Instalar o boodstrap para fazer as operações: 
+
+* npm install bootstrap@5.3.8
