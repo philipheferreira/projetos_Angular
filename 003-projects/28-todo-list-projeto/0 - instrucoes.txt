@@ -4,11 +4,9 @@ Comando para rodar criação do projeto:
 
 Comando para criar componente:
 
-* ng g component components/tarefas
+* ng g component components/todolist
 
 criar o arquivo module para uso em todo o programa, o nome é app.module.ts:
-
-
 
 Sobre os comandos a cima: 
 
