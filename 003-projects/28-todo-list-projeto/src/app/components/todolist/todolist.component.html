@@ -4,10 +4,10 @@
   <h1>To-Do Aplication</h1>
 
   <hr/>
-  <form (ngSubmit)="onSubimit(taskForm)" #taskForm="ngForm">
+  <form (ngSubmit)="onSubmit(taskForm)" #taskForm="ngForm">
     <div class="form-group">
       <label for="task">Tarefa</label>
-      <input type="text" class="form-control" id="task" placeholder="Enter task" ngMode name="task"/>
+      <input type="text" class="form-control" id="task" placeholder="Enter task" ngModel="" name="task"/>
       <div id="errorMessage" class="form-text text-danger">Required field</div>
     </div>
 
@@ -25,10 +25,10 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Mark</td>
+    <tr *ngFor="let t of taskArray; index as i">
+      <td>{{t.taskName}}</td>
       <td> <input id="myCheckbox" type="checkbox" /> </td>
-      <td> <button class="btn btn-danger btn-sm">Delete</button> </td>
+      <td> <button class="btn btn-danger btn-sm" (click)="onDelete(i)">Delete</button> </td>
     </tr>
   </tbody>
 </table>
