@@ -11,7 +11,9 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './todolist.component.css'
 })
 export class Todolist {
-  taskArray = [{taskName: 'Sample Task', isCompleted: false}];
+  taskArray = [{taskName: 'Concluir o Projeto de lista de tarefas', isCompleted: true},
+               {taskName: 'Estudar o Angular', isCompleted: false},
+               {taskName: 'Começar Projetos de React', isCompleted: false}];
 
   constructor() {
     // Initialize the todo list
@@ -28,12 +30,19 @@ export class Todolist {
       taskName: form.controls['task'].value,
       isCompleted: false
     });
+
+    form.reset(); // limpa todos os dados do formulario
   }
 
   onDelete(index: number) {
     console.log(index);
 
     this.taskArray.splice(index, 1);
+  }
+
+  onCheck(index: number) {
+    console.log(index);
+    this.taskArray[index].isCompleted = !this.taskArray[index].isCompleted;
   }
 
 }

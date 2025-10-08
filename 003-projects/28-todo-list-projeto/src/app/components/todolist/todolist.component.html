@@ -1,23 +1,28 @@
 
 <div class="container">
 
-  <h1>To-Do Aplication</h1>
+  <h1>Aplicação de Lista de Tarefas</h1>
 
   <hr/>
   <form (ngSubmit)="onSubmit(taskForm)" #taskForm="ngForm">
     <div class="form-group">
-      <label for="task">Tarefa</label>
-      <input type="text"
+      <label for="task" style="margin-bottom: 0.3em;">Tarefa</label>
+      <div class="input-botao">
+      <input
+        type="text"
         class="form-control"
-        id="task" placeholder="Enter task"
-        ngModel name="task"
+        id="task"
+        placeholder="Digitar Tarefas"
+        ngModel
+        name="task"
         name="task"
         required
       />
-      <small id="errorMessage" class="form-text text-danger">Required field</small>
+      <button [disabled]="taskForm.invalid" id="submitButton" type="submit" class="btn btn-primary">Criar</button> <!-- A funcionalidade disable só sera assionada quando o TaskForm fo vazio-->
+      </div>
+      <small *ngIf="taskForm.invalid && taskForm.dirty" id="errorMessage" class="form-text text-danger">Required field</small> <!-- TaskForm.invalid e taskForm.dirty são os cenarios em que o dado dentro da taskForm for vazio ou errado o que gera um dos dois cenarios e mostra a mensagem de erro-->
     </div>
 
-    <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
   </form>
 
   <hr/>
@@ -25,17 +30,17 @@
   <table class="table">
   <thead>
     <tr>
-      <th scope="col">Task</th>
-      <th scope="col">Completed</th>
-      <th scope="col">Delete</th>
+      <th scope="col">Tarefas</th>
+      <th scope="col">Completadas</th>
+      <th scope="col">Deletar</th>
     </tr>
   </thead>
 
   <tbody>
     <tr *ngFor="let t of taskArray; index as i">
       <td>{{t.taskName}}</td>
-      <td> <input id="myCheckbox" type="checkbox" /> </td>
-      <td> <button class="btn btn-danger btn-sm" (click)="onDelete(i)">Delete</button> </td>
+      <td> <input (change)="onCheck(i)" id="myCheckbox" type="checkbox" [checked]="t.isCompleted" /> </td>
+      <td> <button class="btn btn-danger btn-sm" (click)="onDelete(i)">Deletar</button> </td>
     </tr>
   </tbody>
 </table>

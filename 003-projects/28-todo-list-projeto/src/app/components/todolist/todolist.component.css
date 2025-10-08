@@ -11,3 +11,9 @@ h1 {
 #myCheckbox {
   margin-left: 30px;
 }
+
+.input-botao {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
