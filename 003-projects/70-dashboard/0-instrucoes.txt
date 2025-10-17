@@ -17,4 +17,12 @@ g - Seria abreviação para generate;
 components/ - vai identificar essa pasta, caso não exista será criada;
 todo - Nome do component
 
+2° video da lista
+
 Link do projeto: https://www.youtube.com/watch?v=MgmuN_8SL-E&list=PL3EibBwUnE35_H5gK4C7GOVydP9kOgt5R
+
+Link repositório de components visuais: https://github.com/StartBootstrap/startbootstrap-sb-admin
+
+
+
+
