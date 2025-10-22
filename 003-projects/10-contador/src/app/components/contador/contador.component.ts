@@ -6,6 +6,19 @@ import { Component } from '@angular/core';
   templateUrl: './contador.component.html',
   styleUrl: './contador.component.css'
 })
-export class ContadorComponent {
+export class Contador {
+  valor = 0;
+
+  somar() {
+    this.valor++;
+  }
+
+  subtrair() {
+    this.valor--;
+  }
+
+  resetar() {
+    this.valor = 0;
+  }
 
 }

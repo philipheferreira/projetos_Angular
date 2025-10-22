@@ -6,6 +6,10 @@ Comando para criar componentes:
 
 * ng g component components/contador
 
+Comando para iniciar a aplicação:
+
+* ng serve
+
 Sobre os comandos a cima: 
 
 ng - Todo comando Angular inicia-se com esse prefixo;
