@@ -5,7 +5,7 @@ import { SobreComponent } from './components/sobre/sobre.component';
 
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent }, // Rota Padrão
+  { path: '', component: HomeComponent }, // Rota Padrão. Inicializa com a chamada router-outlet
   { path: 'contato', component: ContatoComponent },
   { path: 'sobre', component: SobreComponent }
 ];
