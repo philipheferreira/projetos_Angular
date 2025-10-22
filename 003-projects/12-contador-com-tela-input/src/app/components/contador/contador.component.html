@@ -1,6 +1,11 @@
 <h1> Projeto Contador Angular</h1>
 <h2> Contador: {{ valor }} </h2>
 
+<label>
+  Valor do Input:
+  <input type="number" [(ngModel)]="valorInput" />
+</label>
+
 <button (click)="somar()">+</button>
 <button (click)="subtrair()">-</button>
 <button (click)="resetar()">Resetar</button>
