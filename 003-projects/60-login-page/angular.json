@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "login-form": {
+    "login-page": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/login-form",
+            "outputPath": "dist/login-page",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "login-form:build:production"
+              "buildTarget": "login-page:build:production"
             },
             "development": {
-              "buildTarget": "login-form:build:development"
+              "buildTarget": "login-page:build:development"
             }
           },
           "defaultConfiguration": "development"
