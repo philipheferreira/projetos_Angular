@@ -1,0 +1,17 @@
+Comando para rodar criação do projeto: 
+
+* ng new login-Form
+
+Comando para criar componentes:
+
+* ng g component components/dashboard
+* ng g component components/login
+
+
+Sobre os comandos a cima: 
+
+ng - Todo comando Angular inicia-se com esse prefixo;
+g - Seria abreviação para generate;
+components/ - vai identificar essa pasta, caso não exista será criada;
+todo - Nome do component
+
