@@ -1,0 +1,12 @@
+<main class="main">
+  <div class="content">
+    <nav>
+      <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="sobre" routerLinkActive="active">Sobre</a>
+      <a routerLink="contato" routerLinkActive="active">Contato</a>
+    </nav>
+
+    <!-- Aqui vai abrir o conteúdo das rotas -->
+    <router-outlet></router-outlet>
+  </div>
+</main>
