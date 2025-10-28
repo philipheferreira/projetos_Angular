@@ -1,0 +1,32 @@
+.footer--doctorcare {
+  background-color: #00856F;
+  padding: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer--doctorcare-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer--doctorcare-logo p {
+  color: #FFF;
+}
+
+.footer--doctorcare-medias {
+  display: flex;
+  gap: 32px;
+}
+
+@media (max-width: 768px) {
+  .footer--doctorcare {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    gap: 50px;
+  }
+}

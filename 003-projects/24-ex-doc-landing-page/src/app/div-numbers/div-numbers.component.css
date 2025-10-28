@@ -1,0 +1,52 @@
+.div-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFAF1;
+  border-radius: 6px;
+  position: absolute;
+  width: 1120px;
+
+  top: 760px;
+  left: 400px;
+
+  gap: 100px;
+  
+  padding: 60px 120px;
+}
+
+.div-numbers p {
+  font-size: 48px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.div-numbers span {
+  font-size: 16px;
+  font-weight: normal;
+  color: #00856F;
+}
+
+.div-numbers--border {
+  height: 83px;
+  background-color: #00856F;
+  width: 1px;
+}
+
+@media (max-width: 768px) {
+  .div-numbers {
+    display: flex;
+    flex-direction: column;
+    left: 155px;
+    top: 1100px;
+
+    width: 450px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-numbers--border {
+    display: none;
+  }
+}

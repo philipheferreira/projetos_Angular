@@ -1,0 +1,73 @@
+.servicos-section {
+  padding: 120px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicos-section--servicos {
+  color: #00856f;
+  font-size: 14px;
+  font-weight: bold;
+
+  margin-bottom: 16px;
+}
+
+.servicos-section h3 {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+}
+
+.servicos-section--cards {
+  margin-top: 64px;
+
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+
+  gap: 40px;
+}
+
+.servicos-section--card {
+  border-radius: 6px;
+  background-color: #fff;
+  width: 468px;
+  border: 1px solid #dce9e2;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.servicos-section--card h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #212529;
+}
+
+.servicos-section--card p {
+  color: #495057;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.servicos-section--card img {
+  width: 24px;
+}
+
+@media (max-width: 768px) {
+  .servicos-section {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 400px;
+  }
+
+  .servicos-section--cards {
+    display: flex;
+    flex-direction: column;
+  }
+}

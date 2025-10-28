@@ -1,0 +1,17 @@
+.button--component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00856F;
+  color: #FFF;
+  gap: 16px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 40px;
+
+  cursor: pointer;
+}
+
+.button--component:hover {
+  background-color: #00453A;
+}

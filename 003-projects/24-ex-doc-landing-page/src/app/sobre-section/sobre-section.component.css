@@ -1,0 +1,46 @@
+.sobre-section {
+  display: flex;
+  justify-content: center;
+  gap: 67px;
+  padding: 120px;
+
+  background-color: #FFFAF1;
+}
+
+.sobre-section--information {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.sobre-section--information h3 {
+  color: #00856F;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.sobre-section--information h2 {
+  color: #212529;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.sobre-section--information p {
+  width: 573px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #495057;
+}
+
+@media (max-width: 768px) {
+  .sobre-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sobre-section--information p {
+    text-align: justify;
+  }
+}
