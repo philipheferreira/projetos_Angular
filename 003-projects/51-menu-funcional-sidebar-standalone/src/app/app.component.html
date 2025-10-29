@@ -1,12 +1,18 @@
 
-<main class="main">
-  <div class="content">
-    <div class="left-side">
-    </div>
-    <div class="divider" role="separator" aria-label="Divider"></div>
-    <div class="right-side">
-    </div>
-  </div>
-</main>
 
-<router-outlet />
+  <div class="content">
+
+    <button (click)="ativarEDesativarMenuLateral()">☰ {{ ativarMenuLateral ? 'Desativar' : 'Ativar' }} Menu Lateral</button>
+    <aside class="sidebar" [class.open]="ativarMenuLateral">
+      <nav>
+        <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+        <a routerLink="sobre" routerLinkActive="active">Sobre</a>
+        <a routerLink="contato" routerLinkActive="active">Contato</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+
