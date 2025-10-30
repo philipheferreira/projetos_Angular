@@ -8,6 +8,14 @@ Comando para criar componente:
 * ng generate component pages/sobre
 * ng generate component pages/contato
 
+Instalar Angular Material (se ainda não tiver)
+
+* ng add @angular/material
+
+Criar modals para operação
+
+* ng generate component component/modals/modal1
+* ng generate component component/modals/modal2
 
 Sobre os comandos a cima:
 
