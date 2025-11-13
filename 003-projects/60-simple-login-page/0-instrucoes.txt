@@ -19,6 +19,28 @@ todo - Nome do component
 
 Link repositório do projeto no github: https://github.com/AneeshaTomy12/angular_simple_login_page
 
+Organização dos componentes na pasta:
+
+src/
+├─ app/
+│  ├─ components/
+│  │  ├─  login/
+│  │  │	├─ login.component.css
+│  │  │    ├─ login.component.html
+│  │  │    ├─ login.component.spec.ts
+│  │  │    └─ login.component.ts
+│  ├─ app.component.css
+│  ├─ app.component.html
+│  ├─ app.component.spec.ts
+│  ├─ app.component.ts
+│  ├─ app.config.ts
+├─ index.html
+├─ main.ts
+└─ styles.css
+
+
+
+
 
 
 
