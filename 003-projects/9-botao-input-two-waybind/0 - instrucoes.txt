@@ -1,3 +1,23 @@
 Criar componente no projeto:
 
-ng g component components/botao-e-input
+* ng g component components/botao-e-input
+
+Organização dos componentes na pasta:
+
+src/
+├─ app/
+│  ├─ components/
+│  │  ├─  botao-e-input/
+│  │  │	├─ botao-e-input.component.css
+│  │  │    ├─ botao-e-input.component.html
+│  │  │    ├─ botao-e-input.component.spec.ts
+│  │  │    └─ botao-e-input.component.ts
+│  ├─ app.component.css
+│  ├─ app.component.html
+│  ├─ app.component.spec.ts
+│  ├─ app.component.ts
+│  ├─ app.config.ts
+│  ├─ app.routes.ts
+├─ index.html
+├─ main.ts
+└─ styles.css

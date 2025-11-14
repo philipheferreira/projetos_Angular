@@ -16,3 +16,27 @@ ng - Todo comando Angular inicia-se com esse prefixo;
 g - Seria abreviação para generate;
 components/ - vai identificar essa pasta, caso não exista será criada;
 todo - Nome do component
+
+Organização dos componentes na pasta:
+
+src/
+├─ app/
+│  ├─ components/
+│  │  ├─  modals/
+│  │  │  ├─ modals/
+│  │  │  │  ├─ modal-cyberpunk/
+│  │  │  │  ├─ new-component.component.css
+│  │  │  │  ├─ new-component.component.html
+│  │  │  │  ├─ new-component.component.spec.ts
+│  │  │  │  └─ new-component.component.ts
+│  │  ├─  img/
+│  │  │  └─ gifCiberpunk.gif
+│  ├─ app.component.css
+│  ├─ app.component.html
+│  ├─ app.component.spec.ts
+│  ├─ app.component.ts
+│  ├─ app.config.ts
+│  ├─ app.routes.ts
+├─ index.html
+├─ main.ts
+└─ styles.css

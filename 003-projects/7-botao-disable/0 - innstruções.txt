@@ -12,4 +12,24 @@ ou
 
 Criar componente no projeto:
 
-ng g component components/novo-component
+* ng g component components/novo-component
+
+Organização dos componentes na pasta:
+
+src/
+├─ app/
+│  ├─ components/
+│  │  ├─  new-component/
+│  │  │	├─ new-component.component.css
+│  │  │    ├─ new-component.component.html
+│  │  │    ├─ new-component.component.spec.ts
+│  │  │    └─ new-component.component.ts
+│  ├─ app.component.css
+│  ├─ app.component.html
+│  ├─ app.component.spec.ts
+│  ├─ app.component.ts
+│  ├─ app.config.ts
+│  ├─ app.routes.ts
+├─ index.html
+├─ main.ts
+└─ styles.css
